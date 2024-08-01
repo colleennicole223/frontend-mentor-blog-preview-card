@@ -1,0 +1,26 @@
+main{
+    --background: #F4D04E;
+    
+    background-color: var(--background);
+
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    margin: 0px;
+}
+
+.tile{
+    /* min-width: 327px; */
+    width: 394px;
+    height: fit-content;
+    background-color: blueviolet;
+    border-radius: 20px;
+    /* padding: 24px 24px; */
+}
