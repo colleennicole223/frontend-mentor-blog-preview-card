@@ -1,7 +1,22 @@
 main{
-    --background: #F4D04E;
+    --white: #FFFFFF;
+    --yellow: #F4D04E;
+    --grey-500: #6b6b6b;
+    --grey-950: #111111;
+
+    --spacing-50: 4px;
+    --spacing-100: 8px;
+    --spacing-150: 12px;
+    --spacing-200: 16px;
+
+    background-color: var(--yellow);
+
+    font-family: 'Figtree','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
-    background-color: var(--background);
+    line-height: 150%;
+    letter-spacing: 0px;
+    
+    
 
     height: 100vh;
     width: 100vw;
@@ -16,11 +31,78 @@ body{
     margin: 0px;
 }
 
+h1, h2, h3, h4{
+    padding: 0px;
+    margin: 0px;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 24px;
+}
+
+h2{
+    font-size: 16px;
+    color: var(--grey-500);
+    font-weight: 500;
+}
+
+h3, h4{
+    font-size: 14px;
+    color: var(--grey-950);
+}
+
+h3{
+    font-weight: 100;
+}
+
+h4{
+    font-weight: 800;
+}
+
+
+/* -------------------------------------- */
+
 .tile{
-    /* min-width: 327px; */
-    width: 394px;
-    height: fit-content;
-    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 336px;
+    background-color: var(--white);
+    border: 1px solid;
     border-radius: 20px;
-    /* padding: 24px 24px; */
+    padding: 24px 24px;
+    box-shadow: 8px 8px 0px rgba(0, 0, 0, 1);
+}
+
+.tileContent{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.highlight{
+    padding: 4px 12px;
+    background-color: var(--yellow);
+    width: fit-content;
+    border-radius: 4px;
+}
+
+.author{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.articleImg{
+    display: flexbox;
+    border-radius: 10px;
+    width: 100%;
+    /* height: 200px; Needs to be 200 without changing the width*/ 
+}
+
+.profileImg{
+    height: 32px;
+    width: 32px;
 }
