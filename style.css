@@ -25,6 +25,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 body{
@@ -67,16 +68,19 @@ h4{
     display: flex;
     flex-direction: column;
     gap: 24px;
-    width: 336px;
+    max-width: 336px;
     background-color: var(--white);
     border: 1px solid;
     border-radius: 20px;
     padding: 24px 24px;
     box-shadow: 8px 8px 0px rgba(0, 0, 0, 1);
+    margin-left: 24px;
+    margin-right: 24px;
 }
 
 .tileContent{
     display: flex;
+    flex: auto;
     flex-direction: column;
     gap: 12px;
 }
@@ -106,3 +110,13 @@ h4{
     height: 32px;
     width: 32px;
 }
+
+
+/* -------------------------------------- */
+
+/* @media (min-width: 500px) {
+    .tile{
+        width: 336px;
+        background-color: pink;
+    }
+} */
